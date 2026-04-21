@@ -18,7 +18,7 @@ INSERT INTO Rooms (hotel_id, room_name, price_per_night) VALUES
 (3, 'Phòng Dorm', 150000),
 (3, 'Phòng Studio', 450000);
 
--- bỏ đi room_name bởi nó ko thuộc GROUP BY sẽ gây lỗi do ko xác định được giá trị duy nhất cho mỗi nhóm
+-- bỏ đi room_name bởi nó ko thuộc GROUP BY sẽ gây lỗi do ko xác định được giá trị duy nhất 
 SELECT 
     hotel_id, 
     MIN(price_per_night) AS cheapest_price
